@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-3 col-sm-3 ">
 				<div class="logo_head_m">
-					<a href=""><img class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>"></a>
+					<a href="<?php echo get_home_url() ?>"><img class="img-responsive" src="<?php echo get_template_directory_uri() . '/img/logo.png' ?>"></a>
 				</div>
 			</div>
 			<?php get_template_part( 'template-parts/header/primary-menu' ); ?>
