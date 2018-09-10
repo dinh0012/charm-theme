@@ -332,3 +332,192 @@ function testimonial_shortcode( $atts ) {
 }
 add_shortcode( 'testimonial', 'testimonial_shortcode' );
 
+function package_shortcode( $atts ) {
+    $num = $atts['number'];
+    $title = $atts['title'];
+    $des = $atts['description'];
+    $location = $atts['location'] ?: 'home';
+    $classService = $location == 'service' ? 'head_page_service' : '';
+    $query = new WP_Query( array( 'post_type' => 'charm_package', 'posts_per_page' => $num, 'meta_query' => array(
+        array(
+            'key'     => '_location',
+            'value'   => $location,
+            'compare' => 'LIKE',
+        ),
+    ), ) );
+
+    $html = '';
+    $html .= '<div class="charm3_head ' . $classService . '">';
+    $html .= '<div class="container">';
+    if ($title && $des) {
+        $html .= '<h3 class="h3_title_id">' . $title . '</h3>';
+        $html .= '<div class="span_p font_gothic_r">' . $des . '</div>';
+    }
+
+    $html .= '<div class="row">';
+    if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+        $iconClass = get_post_meta(get_the_ID(), '_icon_package', true);
+        $html .= '<div class="col-md-4">';
+        $html .= '<div class="item_h">';
+        $html .= '<h3><a href="" class="font_gothic_bold">' . get_the_title() . '</a></h3>';
+        $html .= '<div class="img_h">';
+        $html .= '<a href="' . get_the_permalink() . '" style="background-image:url(' . get_the_post_thumbnail_url() . ')"></a>';
+        $html .= '</div>';
+        $html .= '<div class="content_h">';
+        $html .= '<div class="icon_h">';
+        $html .= '<i class="fa ' . $iconClass . '" aria-hidden="true"></i>';
+        $html .= '</div>';
+        $html .= '<div class="text_h font_gothic_r">';
+        $html .= get_the_content();
+        $html .= '</div>';
+        $html .= '</div>';
+        $html .= '</div>';
+        $html .= '</div>';
+    endwhile; endif;
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    return $html;
+}
+add_shortcode( 'package', 'package_shortcode' );
+
+function service_shortcode( $atts ) {
+    $num = $atts['number'];
+
+    $query = new WP_Query( array( 'post_type' => 'service', 'posts_per_page' => $num ) );
+
+    $html = '';
+    $html .= '<div class="charm3_service service_page_theme">';
+    $html .= '<div class="container">';
+    $html .= '<div class="row">';
+    $html .= '<div class="col-md-12">';
+    $html .= '<div class="service_item">';
+    $i = 1;
+    if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+        $html .= '<div class="cel_md_3 cod_sm_4 cod_xs_6 cod_wl_12 cel_md_hv">';
+        $html .= '<div class="i_it">';
+        $html .= '<div class="it_icon" style="background:url(' . get_the_post_thumbnail_url() . ');background-size:cover;border: 2px solid #d90e0f;    background-position: center;"></div>';
+        $html .= '<div class="it_border">';
+        $html .= '</div>';
+        $html .= '<div class="it_number">' . $i . ' </div>';
+        $html .= '</div>';
+        $html .= '<div class="i_h3">' . get_the_title() . '</div>';
+        $html .= '<div class="i_content">' . get_the_content() . '</div>';
+        $html .= '</div>';
+        $i++;
+    endwhile; endif;
+
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    return $html;
+}
+add_shortcode( 'service', 'service_shortcode' );
+
+function how_we_work_shortcode( $atts ) {
+    $title = $atts['title'];
+    $des = $atts['description'];
+
+    $title1 = $atts['title1'];
+    $title2 = $atts['title2'];
+    $title3 = $atts['title3'];
+
+    $items1 = explode('/#', $atts['items1']);
+    $items2 = explode('/#', $atts['items2']);
+    $items3 = explode('/#', $atts['items3']);
+
+    $money1 = $atts['money1'];
+    $money2 = $atts['money2'];
+    $money3 = $atts['money3'];
+
+    $time1 = $atts['time1'];
+    $time2 = $atts['time2'];
+    $time3 = $atts['time3'];
+
+    $html = '';
+    $html .= '<div class="charm3_service service_page_theme">';
+    $html .= '<div class="container">';
+    $html .= '<h3 class="h3_title_id">' . $title . '</h3>';
+    $html .= '<div class="span_p font_gothic_r">' . $des . '</div>';
+    $html .= '<div class="contai_hw">';
+    $html .= '<div class="row">';
+
+    //item 1
+    $html .= '<div class="col-md-4 col-sm-6">';
+    $html .= '<div class="item_hw">';
+    $html .= '<div class="ihead">';
+    $html .= '<div class="iicon">';
+    $html .= '<span><i class="fa fa-users" aria-hidden="true"></i></span>';
+    $html .= '</div>';
+    $html .= '<div class="h4_title font_gothic_bold">' . $title1 . ' </div>';
+    $html .= '</div>';
+    $html .= '<div class="icontent">';
+    $html .= '<ul>';
+    foreach ($items1 as $item) {
+        $html .= '<li>' . $item;
+        $html .= '</li>';
+    }
+    $html .= '</ul>';
+    $html .= '<div class="imoney font_gothic_bold">' .$money1;
+    $html .= '<span>' . $time1 . '</span>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+
+    //item 2
+    $html .= '<div class="col-md-4 col-sm-6">';
+    $html .= '<div class="item_hw active_item">';
+    $html .= '<div class="ihead">';
+    $html .= '<div class="iicon">';
+    $html .= '<span><i class="fa fa-users" aria-hidden="true"></i></span>';
+    $html .= '</div>';
+    $html .= '<div class="h4_title font_gothic_bold">' . $title2 . ' </div>';
+    $html .= '</div>';
+    $html .= '<div class="icontent">';
+    $html .= '<ul>';
+    foreach ($items2 as $item) {
+        $html .= '<li>' . $item;
+        $html .= '</li>';
+    }
+    $html .= '</ul>';
+    $html .= '<div class="imoney font_gothic_bold">' .$money2;
+    $html .= '<span>' . $time2 . '</span>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+
+    //item 3
+    $html .= '<div class="col-md-4 col-sm-6">';
+    $html .= '<div class="item_hw">';
+    $html .= '<div class="ihead">';
+    $html .= '<div class="iicon">';
+    $html .= '<span><i class="fa fa-users" aria-hidden="true"></i></span>';
+    $html .= '</div>';
+    $html .= '<div class="h4_title font_gothic_bold">' . $title3 . ' </div>';
+    $html .= '</div>';
+    $html .= '<div class="icontent">';
+    $html .= '<ul>';
+    foreach ($items3 as $item) {
+        $html .= '<li>' . $item;
+        $html .= '</li>';
+    }
+    $html .= '</ul>';
+    $html .= '<div class="imoney font_gothic_bold">' .$money3;
+    $html .= '<span>' . $time3 . '</span>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    $html .= '</div>';
+    return $html;
+}
+add_shortcode( 'how_we_work', 'how_we_work_shortcode' );
+

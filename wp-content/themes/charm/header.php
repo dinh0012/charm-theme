@@ -37,7 +37,7 @@
 			tjs.parentNode.insertBefore(js, tjs);
 		}(document, 'script', 'ti-js'));
 	</script>
-
+	<title><?php the_title() ?></title>
 </head>
 <body <?php body_class(); ?>>
 

@@ -46,8 +46,8 @@ function location_meta_box()
 function location_output( $post )
 {
     $location = get_post_meta( $post->ID, '_location', true );
-    echo ( '<label for="link_download">Display In: </label>');
-    echo ('<label><input type="radio" id="location_home" ' . checkedRadio( $location, 'home', true ) . ' name="location" value="home" /> Home page</label>');
+    echo ( '<label for="link_download" style="margin-right: 5px">Display In: </label>');
+    echo ('<label><input type="radio"  id="location_home" ' . checkedRadio( $location, 'home', true ) . ' name="location" value="home" /> <span style="margin-right: 15px">Home page</span></label>');
     echo ('<label><input type="radio" id="location_service" ' . checkedRadio( $location, 'service' ) . ' name="location" value="service" /> Service page</label>');
 }
 add_action( 'add_meta_boxes', 'location_meta_box' );
@@ -75,14 +75,14 @@ function icon_package_meta_box()
 function icon_package_output( $post )
 {
     $icon = get_post_meta( $post->ID, '_icon_package', true );
-    echo ( '<label for="link_download">Icon: </label>');
-    echo ('<label><input type="text"  name="icon" value="'. $icon . '" /></label>');
+    echo ( '<label for="icon_package">Icon Class: </label>');
+    echo ('<label><input type="text"  name="icon_package" value="'. $icon . '" /></label>');
 }
 add_action( 'add_meta_boxes', 'icon_package_meta_box' );
 function icon_package_save( $post_id )
 {
-    $location = sanitize_text_field( $_POST['location'] );
-    update_post_meta( $post_id, '_location', $location );
+    $location = sanitize_text_field( $_POST['icon_package'] );
+    update_post_meta( $post_id, '_icon_package', $location );
 }
 add_action( 'save_post', 'icon_package_save' );
 
