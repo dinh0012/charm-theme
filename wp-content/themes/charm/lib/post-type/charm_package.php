@@ -37,6 +37,8 @@ function charm_package_post_type()
 }
 add_action('init', 'charm_package_post_type');
 
+
+//location
 function location_meta_box()
 {
     add_meta_box( 'location', 'Location', 'location_output', 'charm_package' );
@@ -64,3 +66,23 @@ function checkedRadio($value, $compare, $default = false) {
         return 'checked="checked"';
     }
 }
+
+//icon_package
+function icon_package_meta_box()
+{
+    add_meta_box( 'icon_package', 'Icon', 'icon_package_output', 'charm_package' );
+}
+function icon_package_output( $post )
+{
+    $icon = get_post_meta( $post->ID, '_icon_package', true );
+    echo ( '<label for="link_download">Icon: </label>');
+    echo ('<label><input type="text"  name="icon" value="'. $icon . '" /></label>');
+}
+add_action( 'add_meta_boxes', 'icon_package_meta_box' );
+function icon_package_save( $post_id )
+{
+    $location = sanitize_text_field( $_POST['location'] );
+    update_post_meta( $post_id, '_location', $location );
+}
+add_action( 'save_post', 'icon_package_save' );
+
