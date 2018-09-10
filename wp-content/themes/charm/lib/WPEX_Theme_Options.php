@@ -129,46 +129,6 @@ if ( ! class_exists( 'WPEX_Theme_Options' ) ) {
                     <?php settings_fields( 'theme_options' ); ?>
 
                     <table class="form-table wpex-custom-admin-login-table">
-
-                        <?php // Checkbox example ?>
-                        <tr valign="top">
-                            <th scope="row"><?php esc_html_e( 'Checkbox Example', 'text-domain' ); ?></th>
-                            <td>
-                                <?php $value = self::get_theme_option( 'checkbox_example' ); ?>
-                                <input type="checkbox" name="theme_options[checkbox_example]" <?php checked( $value, 'on' ); ?>> <?php esc_html_e( 'Checkbox example description.', 'text-domain' ); ?>
-                            </td>
-                        </tr>
-
-                        <?php // Text input example ?>
-                        <tr valign="top">
-                            <th scope="row"><?php esc_html_e( 'Input Example', 'text-domain' ); ?></th>
-                            <td>
-                                <?php $value = self::get_theme_option( 'input_example' ); ?>
-                                <input type="text" name="theme_options[input_example]" value="<?php echo esc_attr( $value ); ?>">
-                            </td>
-                        </tr>
-
-                        <?php // Select example ?>
-                        <tr valign="top" class="wpex-custom-admin-screen-background-section">
-                            <th scope="row"><?php esc_html_e( 'Select Example', 'text-domain' ); ?></th>
-                            <td>
-                                <?php $value = self::get_theme_option( 'select_example' ); ?>
-                                <select name="theme_options[select_example]">
-                                    <?php
-                                    $options = array(
-                                        '1' => esc_html__( 'Option 1', 'text-domain' ),
-                                        '2' => esc_html__( 'Option 2', 'text-domain' ),
-                                        '3' => esc_html__( 'Option 3', 'text-domain' ),
-                                    );
-                                    foreach ( $options as $id => $label ) { ?>
-                                        <option value="<?php echo esc_attr( $id ); ?>" <?php selected( $value, $id, true ); ?>>
-                                            <?php echo strip_tags( $label ); ?>
-                                        </option>
-                                    <?php } ?>
-                                </select>
-                            </td>
-                        </tr>
-
                         <?php echo self::linkSocial(); ?>
 
                     </table>

@@ -521,3 +521,41 @@ function how_we_work_shortcode( $atts ) {
 }
 add_shortcode( 'how_we_work', 'how_we_work_shortcode' );
 
+function blog_shortcode( $atts ) {
+    $num = $atts['number'];
+
+    $query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $num ) );
+
+    $html = '';
+    $html .= '<div class="left_new_page">';
+    $html .= '<div class="row">';
+
+
+    if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
+        $html .= '<div class="col-md-12">';
+        $html .= '<div class="item_n">';
+        $html .= '<a href="' . get_the_permalink() . '" class="img_n">';
+        $html .= '<img src="' . get_the_post_thumbnail_url() . '" alt="" class="img-responsive">';
+        $html .= '</a>';
+        $html .= '<div class="content_n">';
+        $html .= '<h3 class="font_open">';
+        $html .= '<a class="h3_title_blog font_gothic_bold" href="' . get_the_permalink() . '">' . get_the_title() . '</a>';
+        $html .= '</h3>';
+        $html .= '<div class="date_new font_open">';
+        $html .= '<span><i class="fa fa-calendar"></i> ' . get_the_date('d/m/Y') . '</span> |';
+        $html .= '<span> <i class="fa fa-user"></i> ' . get_the_author() . '</span>';
+        $html .= '</div>';
+        $html .= '<div class="span_c font_open">' . get_the_excerpt();
+        $html .= '</div>';
+        $html .= '<a href="' . get_the_permalink() . '" class="pull-right bnt_a_blog">Read More</a>';
+        $html .= '</div>';
+        $html .= '</div>';
+        $html .= '</div>';
+    endwhile; endif;
+
+    $html .= '</div>';
+    $html .= '</div>';
+    return $html;
+}
+add_shortcode( 'blog', 'blog_shortcode' );
+

@@ -9,6 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon-1-min.png" sizes="32x32" />
+	<link rel="icon" href="<?php echo get_template_directory_uri() ?>/img/favicon-1-min.png" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="<?php echo get_template_directory_uri() ?>/img/favicon-1-min.png" />
 	<?php wp_head(); ?>
 	<!-- Facebook Pixel Code -->
 	<script>

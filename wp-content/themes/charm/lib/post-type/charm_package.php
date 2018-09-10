@@ -24,7 +24,7 @@ function charm_package_post_type()
         'show_in_nav_menus' => true, //Hiển thị trong Appearance -> Menus
         'show_in_admin_bar' => true, //Hiển thị trên thanh Admin bar màu đen.
         'menu_position' => 5, //Thứ tự vị trí hiển thị trong menu (tay trái)
-        'menu_icon' => '', //Đường dẫn tới icon sẽ hiển thị
+        'menu_icon' => 'dashicons-products', //Đường dẫn tới icon sẽ hiển thị
         'can_export' => true, //Có thể export nội dung bằng Tools -> Export
         'has_archive' => true, //Cho phép lưu trữ (month, date, year)
         'exclude_from_search' => false, //Loại bỏ khỏi kết quả tìm kiếm

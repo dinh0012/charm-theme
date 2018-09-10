@@ -9,46 +9,32 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
+<div class="main-wrapper clearfix">
+    <div id="main" role="main">
+        <div class="wth_theme_main">
+            <section class="new_page">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <?php
+                            // Start the loop.
+                            while (have_posts()) : the_post();
+                                // Include the single post content template.
+                                get_template_part('template-parts/content/single');
+                                // End of the loop.
+                            endwhile;
+                            ?>
 
-			// Include the single post content template.
-			get_template_part( 'template-parts/content', 'single' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) {
-				comments_template();
-			}
-
-			if ( is_singular( 'attachment' ) ) {
-				// Parent post navigation.
-				the_post_navigation( array(
-					'prev_text' => _x( '<span class="meta-nav">Published in</span><span class="post-title">%title</span>', 'Parent post link', 'twentysixteen' ),
-				) );
-			} elseif ( is_singular( 'post' ) ) {
-				// Previous/next post navigation.
-				the_post_navigation( array(
-					'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'twentysixteen' ) . '</span> ' .
-						'<span class="screen-reader-text">' . __( 'Next post:', 'twentysixteen' ) . '</span> ' .
-						'<span class="post-title">%title</span>',
-					'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'twentysixteen' ) . '</span> ' .
-						'<span class="screen-reader-text">' . __( 'Previous post:', 'twentysixteen' ) . '</span> ' .
-						'<span class="post-title">%title</span>',
-				) );
-			}
-
-			// End of the loop.
-		endwhile;
-		?>
-
-	</main><!-- .site-main -->
-
-	<?php get_sidebar( 'content-bottom' ); ?>
-
+                        </div>
+                        <div class="col-md-4">
+                            <div class="right_new_page">
+                                <?php get_sidebar('primary-sidebar'); ?>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div><!-- .site-main -->
 </div><!-- .content-area -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

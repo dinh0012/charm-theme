@@ -6,6 +6,7 @@ require_once 'lib/widget/CommonWidget.php';
 require_once 'lib/widget/widget-tabs.php';
 require_once 'lib/shortcodes/shortcodes.php';
 require_once 'lib/post-type/init_post_type.php';
+require_once 'lib/post-share.php';
 
 add_theme_support( 'post-thumbnails' );
 /*-----------------------------------------------------------------------------------*/
@@ -120,4 +121,27 @@ if ( ! function_exists('tps_get_option') ) {
         }
         return $output;
     }
+}
+
+function setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
+function getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0 View";
+    }
+    return $count.' Views';
 }

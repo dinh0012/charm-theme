@@ -14,9 +14,9 @@
 				<li class="fb_menu_s">
 					<a href="javascript:void(0)" class="a_search"><i class="fa fa-search" aria-hidden="true"></i></a>
 					<div class="form_menu_th_search">
-						<form id="" name="" method="POST" action="#">
+						<form id="" name="" method="GET" action="<?php echo get_home_url() ?>">
 							<div class="input-group">
-								<input name=" " id="" type="text" class="form-control text_search" placeholder="Search" value="">
+								<input name="s" id="" type="text" class="form-control text_search" placeholder="Search" value="">
 								<span class="input-group-btn">
                           <button id="" name="" type="submit" class="btn" value=""><i class="fa fa-search"></i></button>
                       </span>
