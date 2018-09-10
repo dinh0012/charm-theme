@@ -1,6 +1,13 @@
 <?php
 require_once 'lib/Custom_Walker_Nav_Menu_top.php';
 require_once 'lib/WPEX_Theme_Options.php';
+require_once 'lib/widget/SearchSidebar.php';
+require_once 'lib/widget/CommonWidget.php';
+require_once 'lib/widget/widget-tabs.php';
+require_once 'lib/shortcodes/shortcodes.php';
+require_once 'lib/post-type/init_post_type.php';
+
+add_theme_support( 'post-thumbnails' );
 /*-----------------------------------------------------------------------------------*/
 /* Enqueue scripts and styles
 /*-----------------------------------------------------------------------------------*/
@@ -26,7 +33,7 @@ if ( ! function_exists( 'themepixels_scripts' ) ) {
         /* Scripts
         /*-----------------------------------------------------------------------------------*/
 
-        wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-1.10.2.js', array( 'jquery' ), '1.0', true );
+        wp_enqueue_script( 'chamr-jquery', get_template_directory_uri() . '/js/jquery-1.10.2.js', array( 'jquery' ), '1.0', true );
         wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '1.0', true );
         wp_enqueue_script( 'slick', get_template_directory_uri() . '/js/slick/slick.js', array( 'jquery' ), '1.0', true );
         wp_enqueue_script( 'lightslider', get_template_directory_uri() . '/js/lightslider/dist/js/lightslider.js', array( 'jquery' ), '1.0', true );
@@ -46,8 +53,22 @@ function pietergoosen_theme_setup() {
         'primary_menu' => 'Primary menu'
     ) );
 }
-
 add_action( 'after_setup_theme', 'pietergoosen_theme_setup' );
+
+function theme_widgets_init()
+{
+
+    register_sidebar(array(
+        'name' => __('Primary Sidebar', 'themepixels'),
+        'id' => 'primary-sidebar',
+        'before_widget' => '<div id="%1$s" class="sidebar-widget %2$s clearfix">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="widget-title-wrapper"><span class="widget-title-inner"></span><h3 class="widget-title"><span>',
+        'after_title' => '</span></h3></div>',
+    ));
+}
+add_action( 'widgets_init', 'theme_widgets_init' );
+
 /*-----------------------------------------------------------------------------------*/
 /* Favicon
 /*-----------------------------------------------------------------------------------*/
@@ -99,135 +120,4 @@ if ( ! function_exists('tps_get_option') ) {
         }
         return $output;
     }
-}
-
-add_shortcode( 'charmteam', 'team_shortcode' );
-function team_shortcode( $atts ) {
-
-    global $TLPteam;
-    if (!$TLPteam) {
-        return;
-    }
-    $atts          = shortcode_atts( array(
-        'layout'             => 1,
-        'member'             => null,
-        'image'              => 'true',
-        'col'                => 3,
-        'orderby'            => 'date',
-        'order'              => 'DESC',
-        'name-color'         => null,
-        'designation-color'  => null,
-        'sd-color'           => null,
-        'loop'               => 1,
-        'autoplay'           => 1,
-        'autoplayHoverPause' => 1,
-        'nav'                => 1,
-        'dots'               => 1,
-        'autoHeight'         => 1,
-        'lazyLoad'           => 1,
-        'rtl'                => 0,
-    ), $atts, 'tlpteam' );
-    $atts['image'] = 'true' === $atts['image'];
-
-    if ( ! in_array( $atts['col'], array_keys( $TLPteam->scColumns() ) ) ) {
-        $atts['col'] = 3;
-    }
-    if ( ! in_array( $atts['layout'], array_keys( $TLPteam->scLayouts() ) ) ) {
-        $atts['layout'] = 1;
-    }
-    $posts_per_page = $atts['member'] ? absint( $atts['member'] ) : '-1';
-    $html           = null;
-
-    $args = array(
-        'post_type'      => 'team',
-        'post_status'    => 'publish',
-        'posts_per_page' => $posts_per_page,
-        'orderby'        => $atts['orderby'],
-        'order'          => $atts['order']
-    );
-    if ( is_user_logged_in() && is_super_admin() ) {
-        $args['post_status'] = array( 'publish', 'private' );
-    }
-    $settings      = get_option( $TLPteam->options['settings'] );
-    $fImgSize      = ! empty( $settings['feature_img_size'] ) ? $settings['feature_img_size'] : $TLPteam->options['feature_img_size'];
-    $customImgSize = ! empty( $settings['rt_custom_img_size'] ) ? $settings['rt_custom_img_size'] : array();
-
-    $teamQuery = new WP_Query( $args );
-    $layoutID  = "tlp-team-" . mt_rand();
-    $grid      = $atts['col'] == 5 ? '24' : 12 / $atts['col'];
-    if ( $teamQuery->have_posts() ) {
-        $html  .= "<div class='' id='{$layoutID}' data-desktop='{$grid}'>";
-        $html .= "<section class='team_page'>";
-        $html .= "<div class='container'>";
-        $html .= "<div class='row'>";
-        $html .= "<div class='section_theme_page'>";
-        while ( $teamQuery->have_posts() ) : $teamQuery->the_post();
-            $pID         = get_the_ID();
-            $title       = get_the_title();
-            $pLink       = get_permalink();
-            $telephone   = get_post_meta( get_the_ID(), 'telephone', true );
-            $designation = get_post_meta( get_the_ID(), 'designation', true );
-
-            if ( has_post_thumbnail() ) {
-                $imgSrc = $TLPteam->getFeatureImageSrc( $pID, $fImgSize, $customImgSize );
-            } else {
-                $imgSrc = $TLPteam->assetsUrl . 'images/demo.jpg';
-            }
-            $sLink = unserialize( get_post_meta( get_the_ID(), 'social', true ) );
-            $html .= "<div class='cel_md_3 cod_sm_4 cod_tm_6 cod_wl_12'>";
-            $html .= layoutTeam( $title, $pLink, $imgSrc, $designation, $telephone, $sLink );
-            $html .= "</div>";
-
-        endwhile;
-        wp_reset_postdata();
-        // end row
-        $html .= '</div>';
-        $html .= '</div>';
-        $html .= '</div>';
-        $html .= '</div>';
-        $html .= '</div>'; // end container
-    } else {
-        $html .= "<p>" . __( 'No member found', TLP_TEAM_SLUG ) . "</p>";
-    }
-
-    return $html;
-}
-
-function layoutTeam( $title, $pLink, $imgSrc, $designation, $telephone, $sLink ) {
-    global $TLPteam;
-    $settings = get_option( $TLPteam->options['settings'] );
-    $html     = null;
-    $html     .= '<div class="item_team">';
-    $html     .= '<div class="border_img"><div class="border_eff"></div></div>';
-    if ( $imgSrc ) {
-        if ( $settings['link_detail_page'] == 'no' ) {
-            $html .= '<div class="img_t"><img class="img-responsive" src="'. $imgSrc . '" alt="' . $title . '"></div>';
-        } else {
-            $html .= '<a title="' . $title . '" href="' . $pLink . '"><div class="img_t"><img class="img-responsive" src="'. $imgSrc . '" alt="' . $title . '"></div></a>';
-        }
-    }
-    $html .= '<div class="content_t">';
-    if ( $settings['link_detail_page'] == 'no' ) {
-        $html .= '<h3 class="h3_title_blog font_gothic_bold">' . $title . '</h3>';
-    } else {
-        $html .= '<a title="' . $title . '" href="' . $pLink . '"><h3 class="h3_title_blog font_gothic_bold">' . $title . '</h3></a>';
-    }
-    if ( $designation ) {
-        $html .= '<span class="font_gothic_r">' . $designation . '</span>';
-    }
-    if ( $telephone ) {
-        $html .= '<div class="phone_team font_gothic_r">' . $telephone . '</div>';
-    }
-    $html .= '</div>';
-
-    $html .= '<div class="tpl-social">';
-    if ( $sLink ) {
-        foreach ( $sLink as $id => $link ) {
-            $html .= "<a href='{$sLink[$id]}' title='$id' target='_blank'><i class='fa fa-$id'></i></a>";
-        }
-    }
-    $html .= '</div>';
-    $html .= '</div>';
-
-    return $html;
 }
