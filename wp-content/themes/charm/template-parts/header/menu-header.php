@@ -13,7 +13,7 @@
 	<div class="slo_sli <?php echo is_front_page() ? 'slo_sli_id'  : ''?>">
 		<div class="text_slo">
 			<?php
-				if (is_front_page()) {
+				if (is_front_page() && !is_single()) {
 			?>
 				<span class="font_opensan">FIND OUT HOW SMART BUSINESS PEOPLE ARE MAKING MORE MONEY THAN EVER...ALL WHILE SPENDING LESS TIME WORKING</span>
 				<a href="" class="font_gothic_bold">Start outsourcing smart now</a>

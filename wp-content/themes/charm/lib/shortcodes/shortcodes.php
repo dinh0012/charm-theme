@@ -225,6 +225,12 @@ function service_home_shortcode( $atts ) {
     $des2 = $atts['des_service2'];
     $des3 = $atts['des_service3'];
     $des4 = $atts['des_service4'];
+
+    $icon1 = $atts['icon1'];
+    $icon2 = $atts['icon2'];
+    $icon3 = $atts['icon3'];
+    $icon4 = $atts['icon4'];
+
     $image = $atts['image'] ? : get_template_directory_uri() . '/img/CharmOutsource.png';
 
     $html = '';
@@ -235,7 +241,7 @@ function service_home_shortcode( $atts ) {
     $html .= '<div class="service_item">';
     $html .= '<div class="cel_md_6 cel_md_hv">';
     $html .= '<div class="i_it">';
-    $html .= '<div class="it_icon"><i class="fa fa-university" aria-hidden="true"></i></div>';
+    $html .= '<div class="it_icon"><i class="fa ' . $icon1 . '" aria-hidden="true"></i></div>';
     $html .= '<div class="it_border"></div>';
     $html .= '<div class="it_number">01</div>';
     $html .= '</div>';
@@ -246,7 +252,7 @@ function service_home_shortcode( $atts ) {
     $html .= '</div>';
     $html .= '<div class="cel_md_6 cel_md_hv">';
     $html .= '<div class="i_it">';
-    $html .= '<div class="it_icon"><i class="fa fa-university" aria-hidden="true"></i></div>';
+    $html .= '<div class="it_icon"><i class="fa ' . $icon2 . '" aria-hidden="true"></i></div>';
     $html .= '<div class="it_border"></div>';
     $html .= '<div class="it_number">02</div>';
     $html .= '</div>';
@@ -257,7 +263,7 @@ function service_home_shortcode( $atts ) {
     $html .= '</div>';
     $html .= '<div class="cel_md_6 cel_md_hv">';
     $html .= '<div class="i_it">';
-    $html .= '<div class="it_icon"><i class="fa fa-university" aria-hidden="true"></i></div>';
+    $html .= '<div class="it_icon"><i class="fa ' . $icon3 . '" aria-hidden="true"></i></div>';
     $html .= '<div class="it_border"></div>';
     $html .= '<div class="it_number">03</div>';
     $html .= '</div>';
@@ -268,7 +274,7 @@ function service_home_shortcode( $atts ) {
     $html .= '</div>';
     $html .= '<div class="cel_md_6 cel_md_hv">';
     $html .= '<div class="i_it">';
-    $html .= '<div class="it_icon"><i class="fa fa-university" aria-hidden="true"></i></div>';
+    $html .= '<div class="it_icon"><i class="fa ' . $icon4 . '" aria-hidden="true"></i></div>';
     $html .= '<div class="it_border"></div>';
     $html .= '<div class="it_number">04</div>';
     $html .= '</div>';
@@ -438,7 +444,7 @@ function how_we_work_shortcode( $atts ) {
 
 
     $html = '';
-    $html .= '<div class="charm3_service service_page_theme">';
+    $html .= '<div class="charm3_head head_page_service">';
     $html .= '<div class="container">';
     $html .= '<h3 class="h3_title_id">' . $title . '</h3>';
     $html .= '<div class="span_p font_gothic_r">' . $des . '</div>';
