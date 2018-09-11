@@ -442,6 +442,10 @@ function how_we_work_shortcode( $atts ) {
     $time2 = $atts['time2'];
     $time3 = $atts['time3'];
 
+    $icon1 = $atts['icon1'];
+    $icon2 = $atts['icon2'];
+    $icon3 = $atts['icon3'];
+
 
     $html = '';
     $html .= '<div class="charm3_head head_page_service">';
@@ -456,7 +460,7 @@ function how_we_work_shortcode( $atts ) {
     $html .= '<div class="item_hw">';
     $html .= '<div class="ihead">';
     $html .= '<div class="iicon">';
-    $html .= '<span><i class="fa fa-users" aria-hidden="true"></i></span>';
+    $html .= '<span><i class="fa ' . $icon1 .'" aria-hidden="true"></i></span>';
     $html .= '</div>';
     $html .= '<div class="h4_title font_gothic_bold">' . $title1 . ' </div>';
     $html .= '</div>';
@@ -479,7 +483,7 @@ function how_we_work_shortcode( $atts ) {
     $html .= '<div class="item_hw active_item">';
     $html .= '<div class="ihead">';
     $html .= '<div class="iicon">';
-    $html .= '<span><i class="fa fa-users" aria-hidden="true"></i></span>';
+    $html .= '<span><i class="fa ' . $icon2 .'" aria-hidden="true"></i></span>';
     $html .= '</div>';
     $html .= '<div class="h4_title font_gothic_bold">' . $title2 . ' </div>';
     $html .= '</div>';
@@ -502,7 +506,7 @@ function how_we_work_shortcode( $atts ) {
     $html .= '<div class="item_hw">';
     $html .= '<div class="ihead">';
     $html .= '<div class="iicon">';
-    $html .= '<span><i class="fa fa-users" aria-hidden="true"></i></span>';
+    $html .= '<span><i class="fa ' . $icon3 .'" aria-hidden="true"></i></span>';
     $html .= '</div>';
     $html .= '<div class="h4_title font_gothic_bold">' . $title3 . ' </div>';
     $html .= '</div>';
