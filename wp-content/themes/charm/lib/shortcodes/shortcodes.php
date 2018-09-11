@@ -436,6 +436,7 @@ function how_we_work_shortcode( $atts ) {
     $time2 = $atts['time2'];
     $time3 = $atts['time3'];
 
+
     $html = '';
     $html .= '<div class="charm3_service service_page_theme">';
     $html .= '<div class="container">';
@@ -461,7 +462,7 @@ function how_we_work_shortcode( $atts ) {
     }
     $html .= '</ul>';
     $html .= '<div class="imoney font_gothic_bold">' .$money1;
-    $html .= '<span>' . $time1 . '</span>';
+    $html .= '/<span>' . $time1 . '</span>';
     $html .= '</div>';
     $html .= '</div>';
     $html .= '</div>';
@@ -484,7 +485,7 @@ function how_we_work_shortcode( $atts ) {
     }
     $html .= '</ul>';
     $html .= '<div class="imoney font_gothic_bold">' .$money2;
-    $html .= '<span>' . $time2 . '</span>';
+    $html .= '/<span>' . $time2 . '</span>';
     $html .= '</div>';
     $html .= '</div>';
     $html .= '</div>';
@@ -507,7 +508,7 @@ function how_we_work_shortcode( $atts ) {
     }
     $html .= '</ul>';
     $html .= '<div class="imoney font_gothic_bold">' .$money3;
-    $html .= '<span>' . $time3 . '</span>';
+    $html .= '/<span>' . $time3 . '</span>';
     $html .= '</div>';
     $html .= '</div>';
     $html .= '</div>';
