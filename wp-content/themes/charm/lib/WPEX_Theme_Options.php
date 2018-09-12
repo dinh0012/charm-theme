@@ -120,7 +120,7 @@ if ( ! class_exists( 'WPEX_Theme_Options' ) ) {
          */
         public static function create_admin_page() { ?>
 
-            <div class="wrap">
+            <div class="wrap redux-main " >
 
                 <h1><?php esc_html_e( 'Theme Options', 'text-domain' ); ?></h1>
 
@@ -130,6 +130,9 @@ if ( ! class_exists( 'WPEX_Theme_Options' ) ) {
 
                     <table class="form-table wpex-custom-admin-login-table">
                         <?php echo self::linkSocial(); ?>
+                        <?php echo self::bgBannerOnTop(); ?>
+                        <?php echo self::textOnBannerOnTop(); ?>
+                        <?php echo self::btnOnBannerOnTop(); ?>
 
                     </table>
 
@@ -144,20 +147,76 @@ if ( ! class_exists( 'WPEX_Theme_Options' ) ) {
             $socialLink =  WPEX_Theme_Options::get_theme_option('top_bar_right_social_icons');
             $html ='';
             $html .= '<tr class="fold"><th scope="row">';
-            $html .=  '<div class="redux_field_th">Social Icons<span class="description">Enter the full URL to your social profile</span></div></th>';
+            $html .=  '<div class="redux_field_th">Social Icons<span class="description"> Enter the full URL to your social profile</span></div></th>';
             $html .=  '<td>';
             $html .=  '<fieldset id="theme_options-top_bar_right_social_icons" class="redux-field-container redux-field redux-container-sortable" data-id="top_bar_right_social_icons" data-type="sortable">';
             $html .=  '<ul id="top_bar_right_social_icons-list" class="redux-sortable   labeled ui-sortable">';
             $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[facebook]"><strong>facebook</strong></label><br>';
-            $html .=  '<input rel="top_bar_right_social_icons-facebook-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][facebook]" id="top_bar_right_social_icons[facebook]" value="' .  $socialLink['facebook'] . '" placeholder="Facebook"></li>';
-            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[youtube]"><strong>youtube</strong></label><br><input rel="top_bar_right_social_icons-youtube-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][youtube]" id="top_bar_right_social_icons[youtube]" value="' .  $socialLink['youtube'] . '" placeholder="Youtube"></li>';
-            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[instagram]"><strong>instagram</strong></label><br><input rel="top_bar_right_social_icons-instagram-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][instagram]" id="top_bar_right_social_icons[instagram]" value="' .  $socialLink['instagram'] . '" placeholder="Instagram"></li>';
-            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[linkedin]"><strong>linkedin</strong></label><br><input rel="top_bar_right_social_icons-linkedin-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][linkedin]" id="top_bar_right_social_icons[linkedin]" value="' .  $socialLink['linkedin'] . '" placeholder="Linkedin"></li>';
-            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[twitter]"><strong>twitter</strong></label><br><input rel="top_bar_right_social_icons-twitter-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][twitter]" id="top_bar_right_social_icons[twitter]" value="' .  $socialLink['twitter'] . '" placeholder="Twitter"></li>';
-            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[skype]"><strong>skype</strong></label><br><input rel="top_bar_right_social_icons-skype-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][skype]" id="top_bar_right_social_icons[skype]" value="' .  $socialLink['skype'] . '" placeholder="Skype"></li>';
-            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[pinterest]"><strong>pinterest</strong></label><br><input rel="top_bar_right_social_icons-pinterest-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][pinterest]" id="top_bar_right_social_icons[pinterest]" value="' .  $socialLink['pinterest'] . '" placeholder="Pinterest"></li>';
-            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[vimeo]"><strong>vimeo</strong></label><br><input rel="top_bar_right_social_icons-vimeo-hidden" class="" type="text" name="theme_options[top_bar_right_social_icons][vimeo]" id="top_bar_right_social_icons[vimeo]" value="' .  $socialLink['vimeo'] . '" placeholder="Vimeo"></li>';
+            $html .=  '<input rel="top_bar_right_social_icons-facebook-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][facebook]" id="top_bar_right_social_icons[facebook]" value="' .  $socialLink['facebook'] . '" placeholder="Facebook"></li>';
+            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[youtube]"><strong>youtube</strong></label><br><input rel="top_bar_right_social_icons-youtube-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][youtube]" id="top_bar_right_social_icons[youtube]" value="' .  $socialLink['youtube'] . '" placeholder="Youtube"></li>';
+            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[instagram]"><strong>instagram</strong></label><br><input rel="top_bar_right_social_icons-instagram-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][instagram]" id="top_bar_right_social_icons[instagram]" value="' .  $socialLink['instagram'] . '" placeholder="Instagram"></li>';
+            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[linkedin]"><strong>linkedin</strong></label><br><input rel="top_bar_right_social_icons-linkedin-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][linkedin]" id="top_bar_right_social_icons[linkedin]" value="' .  $socialLink['linkedin'] . '" placeholder="Linkedin"></li>';
+            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[twitter]"><strong>twitter</strong></label><br><input rel="top_bar_right_social_icons-twitter-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][twitter]" id="top_bar_right_social_icons[twitter]" value="' .  $socialLink['twitter'] . '" placeholder="Twitter"></li>';
+            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[skype]"><strong>skype</strong></label><br><input rel="top_bar_right_social_icons-skype-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][skype]" id="top_bar_right_social_icons[skype]" value="' .  $socialLink['skype'] . '" placeholder="Skype"></li>';
+            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[pinterest]"><strong>pinterest</strong></label><br><input rel="top_bar_right_social_icons-pinterest-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][pinterest]" id="top_bar_right_social_icons[pinterest]" value="' .  $socialLink['pinterest'] . '" placeholder="Pinterest"></li>';
+            $html .=  '<li><label class="bugger" for="top_bar_right_social_icons[vimeo]"><strong>vimeo</strong></label><br><input rel="top_bar_right_social_icons-vimeo-hidden" class="regular-text " type="text" name="theme_options[top_bar_right_social_icons][vimeo]" id="top_bar_right_social_icons[vimeo]" value="' .  $socialLink['vimeo'] . '" placeholder="Vimeo"></li>';
             $html .=  '</ul></fieldset></td></tr>';
+            return $html;
+        }
+
+        public static function bgBannerOnTop()
+        {
+            $bannerOnTop = WPEX_Theme_Options::get_theme_option('banner_on_top');
+            $bannerOnTopId = WPEX_Theme_Options::get_theme_option('banner_on_top_id');
+            $html = '';
+            $html .= '<tr class="fold"><th scope="row">';
+            $html .= '<div class="redux_field_th">Background On Banner Top<span class="description"> Change Image on Banner Top</span></div></th>';
+            $html .= '<td>';
+            $html .= '<fieldset id="theme_options-top_bar_right_social_icons" class="redux-field-container redux-field redux-container-sortable" data-id="top_bar_right_social_icons" data-type="sortable">';
+
+            $html .= '<div class="screenshot">
+                         <a class="of-uploaded-image" href="' . $bannerOnTop . '" target="_blank">
+                         <img class="redux-option-image" id="image_banner" src="' . $bannerOnTop . '" alt="" target="_blank" rel="external"></a>
+                      </div>';
+            $html .= '<div class="upload_button_div">
+                        <span class="button media_upload_button" id="banner_image-media">Upload</span>
+                      </div>';
+            $html .= '<input type="hidden" name="theme_options[banner_on_top_id]" id="myprefix_image_id" value="' . $bannerOnTopId . '" class="regular-text" />';
+            $html .= '<input type="hidden" name="theme_options[banner_on_top]" id="image_url" value="' . $bannerOnTop . '" class="regular-text" />';
+            $html .= '</fieldset></td></tr>';
+            return $html;
+        }
+
+        public static function textOnBannerOnTop()
+        {
+            $text = WPEX_Theme_Options::get_theme_option('text_banner_on_top');
+            $html = '';
+            $html .= '<tr class="fold"><th scope="row">';
+            $html .= '<div class="redux_field_th">Text On Banner Top<span class="description"> Change Text on Banner Top Homepage</span></div></th>';
+            $html .= '<td>';
+            $html .= '<fieldset id="theme_options-top_bar_right_social_icons" class="redux-field-container redux-field redux-container-sortable" data-id="top_bar_right_social_icons" data-type="sortable">';
+            $html .='<input rel="top_bar_right_social_icons-facebook-hidden" class="regular-text " type="text" name="theme_options[text_banner_on_top]" id="top_bar_right_social_icons[facebook]" value="' .  $text . '" placeholder="Text">';
+            $html .= '</fieldset></td></tr>';
+            return $html;
+        }
+
+        public static function btnOnBannerOnTop()
+        {
+            $text = WPEX_Theme_Options::get_theme_option('text_btn_banner_on_top');
+            $link = WPEX_Theme_Options::get_theme_option('link_btn_banner_on_top');
+            $html = '';
+            $html .= '<tr class="fold"><th scope="row">';
+            $html .= '<div class="redux_field_th">Button On Banner Top<span class="description"> Change Button on Banner Top Homepage</span></div></th>';
+            $html .= '<td>';
+            $html .= '<fieldset id="theme_options-top_bar_right_social_icons" class="redux-field-container redux-field redux-container-sortable" data-id="top_bar_right_social_icons" data-type="sortable">';
+            $html .= '<ul>';
+            $html .='<li><label class="bugger" for="top_bar_right_social_icons[youtube]"><strong>Label Button</strong></label><br>';
+            $html .='<input  class="regular-text " type="text" name="theme_options[text_btn_banner_on_top]"  value="' .  $text . '" placeholder="Text">';
+            $html .= '</li>';
+            $html .='<li><label class="bugger" for="top_bar_right_social_icons[youtube]"><strong>Link Button</strong></label><br>';
+            $html .='<input class="regular-text " type="text" name="theme_options[link_btn_banner_on_top]" value="' .  $link . '" placeholder="Link">';
+            $html .= '</li>';
+            $html .= '</ul></fieldset></td></tr>';
             return $html;
         }
 

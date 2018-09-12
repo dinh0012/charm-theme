@@ -46,6 +46,15 @@ if ( ! function_exists( 'themepixels_scripts' ) ) {
     }
 }
 add_action( 'wp_enqueue_scripts', 'themepixels_scripts' );
+
+function admin_style() {
+    wp_enqueue_media();
+    wp_enqueue_style('admin-styles', get_template_directory_uri().'/css/redux-admin.css');
+    wp_enqueue_style('redux-fields', get_template_directory_uri().'/css/redux-fields.css');
+    wp_enqueue_script('admin-script', get_template_directory_uri().'/js/admin.js');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
+
 function pietergoosen_theme_setup() {
     register_nav_menus( array(
         'charm_outsourcing_menu_footer' => 'Charm outsourcing menu footer',
