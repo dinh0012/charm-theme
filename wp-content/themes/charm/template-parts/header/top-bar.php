@@ -3,14 +3,14 @@
 	<div class="container">
 		<div class="menu_th_r">
 			<ul >
-				<li><a href="<?php echo $socialLink['facebook'] ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['youtube'] ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['instagram'] ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['linkedin'] ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['twitter'] ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['skype'] ?>"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['pinterest'] ?>"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['vimeo'] ?>"><i class="fa fa-vimeo-square" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['facebook'] ?>"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['youtube'] ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['instagram'] ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['linkedin'] ?>"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['twitter'] ?>"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['skype'] ?>"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['pinterest'] ?>"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['vimeo'] ?>"><i class="fa fa-vimeo-square" aria-hidden="true"></i></a></li>
 				<li class="fb_menu_s">
 					<a href="javascript:void(0)" class="a_search"><i class="fa fa-search" aria-hidden="true"></i></a>
 					<div class="form_menu_th_search">

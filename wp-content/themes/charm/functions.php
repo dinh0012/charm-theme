@@ -17,10 +17,10 @@ function theme_setup() {
 add_action( 'after_setup_theme', 'theme_setup' );
 
 function theme_register_meta_boxes( $meta_boxes ){
-    $prefix = 'charm_';
+    $prefix = 'themepixels_';
     $meta_boxes[] = array(
-        'id'         => 'themecharm_format_video',
-        'title'      => __( 'Video Post Options', 'themecharm' ),
+        'id'         => 'themepixels_format_video',
+        'title'      => __( 'Video Post Options', 'themepixels' ),
         'post_types' => array( 'post' ),
         'context'    => 'normal',
         'priority'   => 'high',
@@ -28,26 +28,26 @@ function theme_register_meta_boxes( $meta_boxes ){
         'fields'     => array(
 
             array(
-                'name'				=> __( 'Video Type', 'themecharm' ),
+                'name'				=> __( 'Video Type', 'themepixels' ),
                 'id'				=> "{$prefix}video_type",
                 'type'				=> 'select',
                 'options'			=> array(
-                    'embed'			=> __( 'Embed', 'themecharm' ),
-                    'selfhosted'	=> __( 'Self Hosted', 'themecharm' ),
+                    'embed'			=> __( 'Embed', 'themepixels' ),
+                    'selfhosted'	=> __( 'Self Hosted', 'themepixels' ),
                 ),
                 'multiple'			=> false,
                 'std'				=> '',
-                'placeholder'		=> __( 'Select Video Type', 'themecharm' ),
+                'placeholder'		=> __( 'Select Video Type', 'themepixels' ),
             ),
 
             array(
-                'name'				=> __( 'Video Embed URL', 'themecharm' ) .' <a href="http://codex.wordpress.org/Embeds" target="_blank">'. __( '(Learn More)', 'themecharm' ) .'</a>',
+                'name'				=> __( 'Video Embed URL', 'themepixels' ) .' <a href="http://codex.wordpress.org/Embeds" target="_blank">'. __( '(Learn More)', 'themepixels' ) .'</a>',
                 'id'				=> "{$prefix}post_video_embed_url",
                 'type'				=> 'oembed',
             ),
 
             array(
-                'name'				=> __( 'Self Hosted Video', 'themecharm' ),
+                'name'				=> __( 'Self Hosted Video', 'themepixels' ),
                 'id'				=> "{$prefix}post_self_hosted_video",
                 'type'				=> 'file_input',
             ),

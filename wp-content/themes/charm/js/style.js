@@ -53,6 +53,17 @@ $(document).ready(function($){
             $(".fb_menu_s").removeClass("search_active");
         }    
     });
+    $('.timezone input[type=radio]').on('change', function(e){
+        var value = $(this).val();
+        var input = $('.timezone input.input_other_lb')
+        if (value != 'OTHER') {
+            input.val(value);
+            input.prop('disabled', true);
+        } else {
+            input.prop('disabled', false);
+            input.val('');
+        }
+    });
     // -----------Contact
     // $(".group_li .other_lb").click(function(){
     //     if(! $(this).parent().hasClass("gr_active")){

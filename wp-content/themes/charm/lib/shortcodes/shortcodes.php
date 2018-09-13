@@ -548,16 +548,16 @@ function blog_shortcode( $atts ) {
         $html .= '<div class="item_n">';
         $format = get_post_format();
         if ($format == 'video') {
-            $post_embed_video = rwmb_meta('charm_post_video_embed_url', 'type=oembed', get_the_ID() );
-            $post_self_hosted_video = rwmb_meta( 'charm_post_self_hosted_video', 'type=file_input', get_the_ID() );
+            $post_embed_video = rwmb_meta('themepixels_post_video_embed_url', 'type=oembed', get_the_ID() );
+            $post_self_hosted_video = rwmb_meta( 'themepixels_post_self_hosted_video', 'type=file_input', get_the_ID() );
             if ( has_post_thumbnail() ) {
                 $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), "full" );
             }
-            if (rwmb_meta('charm_video_type', '', get_the_ID()) == 'embed') {
+            if (rwmb_meta('themepixels_video_type', '', get_the_ID()) == 'embed') {
                 if ($post_embed_video != '') {
                     $html .= '<div class="post-video-wrapper responsive-video-wrapper clearfix">'. wp_oembed_get( $post_embed_video ) .'</div>';
                 }
-            } elseif (rwmb_meta('charm_video_type', '', get_the_ID()) == 'selfhosted') {
+            } elseif (rwmb_meta('themepixels_video_type', '', get_the_ID()) == 'selfhosted') {
                 if ($post_self_hosted_video != '') {
                     $html .= '<div class="post-video-wrapper clearfix">';
                     $html .= do_shortcode('[video src="' . esc_url($post_self_hosted_video) . '" poster="' . esc_url($img_src[0]) . '"][/video]');

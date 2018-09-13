@@ -2,254 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b7f4807-c903-4b6a-b8be-2ec47e736ec2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/select2/select2-spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/select2/select2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/select2/select2x2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/select2/spinner.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_flat_0_aaaaaa_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_flat_75_ffffff_40x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_glass_55_fbf9ee_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_glass_65_ffffff_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_glass_75_dadada_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_glass_75_e6e6e6_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_glass_95_fef1ec_1x400.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-bg_highlight-soft_75_cccccc_1x100.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-icons_2e83ff_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-icons_454545_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-icons_888888_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/jqueryui/ui-icons_cd0a0a_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/img/loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/ar.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/de_DE.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/es.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/it_IT.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/nb_NO.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/nl.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/pt_BR.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/sv_SE.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/tr_TR.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/vi.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/zh_CN.mo" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/autocomplete.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/color.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/divider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/file.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/heading.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/image-select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/image.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/jqueryui/jquery-ui-timepicker-addon.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/jqueryui/jquery.ui.core.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/jqueryui/jquery.ui.datepicker.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/jqueryui/jquery.ui.slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/jqueryui/jquery.ui.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/oembed.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/plupload-image.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/range.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/select-advanced.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/select2/select2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/slider.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/taxonomy.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/css/wysiwyg.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/common.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/field.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/autocomplete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/button.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/checkbox-list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/checkbox.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/color.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/date.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/datetime.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/divider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/email.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/fieldset-text.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/file-advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/file-input.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/file.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/heading.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/hidden.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/image-advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/image-select.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/map.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/number.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/oembed.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/password.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/plupload-image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/radio.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/range.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/select-advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/select.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/slider.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/taxonomy-advanced.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/taxonomy.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/text-list.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/text.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/textarea.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/thickbox-image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/time.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/url.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/user.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/fields/wysiwyg.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/helpers.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/init.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/inc/meta-box.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/autosave.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/clone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/color.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/date.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/datetime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/file-advanced.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/file-input.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/image-advanced.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/image-select.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ar-DZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-az.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-be.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-bs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-cy-GB.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-da.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-en-AU.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-en-GB.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-en-NZ.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-eo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-fa.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-fo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-fr-CA.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-fr-CH.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-hi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-hr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-hy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-is.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ka.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-kk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-km.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-lb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-lv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-mk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ms.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-nb.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-nl-BE.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-nn.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-rm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-sl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-sq.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-sr-SR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-sr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-ta.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-tj.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-zh-HK.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/datepicker-i18n/jquery.ui.datepicker-zh-TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/jquery-ui-timepicker-addon.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-bg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-ca.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-cs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-de.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-el.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-es.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-et.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-eu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-fi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-fr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-gl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-he.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-hu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-id.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-it.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-ja.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-lt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-nl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-no.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-pl.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-pt-BR.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-pt.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-ro.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-sk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-sv.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-th.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-tr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-uk.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-vi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/jqueryui/timepicker-i18n/jquery-ui-timepicker-zh-TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/oembed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/plupload-image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/select-advanced.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/select2/select2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/taxonomy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/thickbox-image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/js/validate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/ar.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/de_DE.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/default.pot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/es.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/it_IT.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/nb_NO.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/nl.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/pt_BR.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/sv_SE.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/tr_TR.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/vi.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/lang/zh_CN.po" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/meta-box.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/post-navigation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-config.php" afterPath="$PROJECT_DIR$/wp-config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/footer.php" afterPath="$PROJECT_DIR$/wp-content/themes/charm/footer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/functions.php" afterPath="$PROJECT_DIR$/wp-content/themes/charm/functions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/lib/Custom_Walker_Nav_Menu_top.php" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/Custom_Walker_Nav_Menu_top.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/js/style.js" afterPath="$PROJECT_DIR$/wp-content/themes/charm/js/style.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/lib/shortcodes/shortcodes.php" afterPath="$PROJECT_DIR$/wp-content/themes/charm/lib/shortcodes/shortcodes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/charm/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/single.php" afterPath="$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/single.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/charm/template-parts/header/top-bar.php" afterPath="$PROJECT_DIR$/wp-content/themes/charm/template-parts/header/top-bar.php" />
     </list>
@@ -275,18 +31,20 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="357">
+              <caret line="55" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="1" />
+              <folding>
+                <element signature="e#744#2104#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="charm_outsourcing_menu.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/template-parts/footer/charm_outsourcing_menu.php">
+      <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+            <state relative-caret-position="459">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -295,12 +53,31 @@
       <file leaf-file-name="single.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/single.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="327">
+              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
               <folding>
-                <marker date="1536846425997" expanded="true" signature="1640:1694" ph="..." />
-                <marker date="1536846425997" expanded="true" signature="2090:2126" ph="..." />
+                <marker date="1536849752413" expanded="true" signature="1664:1718" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/js/style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="385">
+              <caret line="62" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content-single.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/content-single.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="181" column="62" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -308,42 +85,46 @@
       <file leaf-file-name="shortcodes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/lib/shortcodes/shortcodes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="554" column="13" selection-start-line="554" selection-start-column="13" selection-end-line="554" selection-end-column="13" />
+            <state relative-caret-position="361">
+              <caret line="179" column="33" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="33" />
               <folding>
                 <element signature="n#team_shortcode#0;n#!!top" expanded="false" />
                 <element signature="n#service_shortcode#0;n#!!top" expanded="false" />
-                <marker date="1536847472749" expanded="true" signature="21595:21695" ph="..." />
+                <marker date="1536849752224" expanded="true" signature="21619:21719" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/style.css">
+      <file leaf-file-name="meta-boxes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/framework/meta-boxes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="1377" column="0" selection-start-line="1377" selection-start-column="0" selection-end-line="1377" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="130">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <element signature="e#655#1755#0#PHP" expanded="false" />
+                <element signature="e#1802#2237#0#PHP" expanded="false" />
+                <element signature="e#2281#3183#0#PHP" expanded="false" />
+                <element signature="e#3228#3935#0#PHP" expanded="false" />
+                <element signature="e#3981#4436#0#PHP" expanded="false" />
+                <element signature="e#4481#5581#0#PHP" expanded="false" />
+                <element signature="e#5620#9450#0#PHP" expanded="false" />
+                <element signature="e#9489#12279#0#PHP" expanded="false" />
+                <element signature="e#12312#13812#0#PHP" expanded="false" />
+                <element signature="e#13845#15062#0#PHP" expanded="false" />
+                <element signature="e#15095#16615#0#PHP" expanded="false" />
+                <element signature="e#16650#19826#0#PHP" expanded="false" />
+                <element signature="e#19871#22873#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="primary-menu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/template-parts/header/primary-menu.php">
+      <file leaf-file-name="charm_outsourcing_menu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/template-parts/footer/charm_outsourcing_menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="29" column="57" selection-start-line="29" selection-start-column="57" selection-end-line="29" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Custom_Walker_Nav_Menu_top.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/lib/Custom_Walker_Nav_Menu_top.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="64" selection-start-line="11" selection-start-column="64" selection-end-line="11" selection-end-column="64" />
+            <state relative-caret-position="0">
+              <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -364,16 +145,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu-walker.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/framework/menu-walker/menu-walker.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="265" column="125" selection-start-line="265" selection-start-column="121" selection-end-line="265" selection-end-column="125" />
               <folding />
             </state>
           </provider>
@@ -466,15 +237,16 @@
         <option value="$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/search.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/charm/template-parts/header/menu-header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/post-navigation.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/single.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/charm/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/smartblog/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/charm/lib/meta-box/meta-box.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/charm/lib/shortcodes/shortcodes.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/charm/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/charm/lib/Custom_Walker_Nav_Menu_top.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/charm/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/charm/template-parts/header/top-bar.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/charm/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/single.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/charm/lib/shortcodes/shortcodes.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/charm/js/style.js" />
       </list>
     </option>
   </component>
@@ -635,36 +407,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="smartblog" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu-walker" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="charm-theme" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="charm-theme" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="wp-content" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="themes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="charm_html" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -769,7 +511,93 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="template-parts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm-theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm-theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm-theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm-theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slick" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm-theme" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm-theme" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wp-content" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="charm" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -873,12 +701,12 @@
       <workItem from="1536422636008" duration="19040000" />
       <workItem from="1536547292991" duration="24149000" />
       <workItem from="1536583997765" duration="13831000" />
-      <workItem from="1536841942080" duration="6698000" />
+      <workItem from="1536841942080" duration="8742000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64783000" />
+    <option name="totallyTimeSpent" value="66827000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -953,13 +781,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-admin/includes/post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -1135,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="38" column="28" selection-start-line="27" selection-start-column="23" selection-end-line="38" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -1204,7 +1018,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#6#279#0#PHP" expanded="true" />
+            <element signature="e#6#279#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1214,28 +1028,6 @@
         <state relative-caret-position="-153">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/framework/meta-boxes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="770" column="8" selection-start-line="770" selection-start-column="8" selection-end-line="770" selection-end-column="27" />
-          <folding>
-            <element signature="e#655#1755#0#PHP" expanded="false" />
-            <element signature="e#1802#2237#0#PHP" expanded="false" />
-            <element signature="e#2281#3183#0#PHP" expanded="false" />
-            <element signature="e#3228#3935#0#PHP" expanded="false" />
-            <element signature="e#3981#4436#0#PHP" expanded="false" />
-            <element signature="e#4481#5581#0#PHP" expanded="false" />
-            <element signature="e#5620#9450#0#PHP" expanded="false" />
-            <element signature="e#9489#12279#0#PHP" expanded="false" />
-            <element signature="e#12312#13812#0#PHP" expanded="false" />
-            <element signature="e#13845#15062#0#PHP" expanded="false" />
-            <element signature="e#15095#16615#0#PHP" expanded="false" />
-            <element signature="e#16650#19826#0#PHP" expanded="false" />
-            <element signature="e#19871#22873#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1263,33 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/content-single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="191" column="25" selection-start-line="181" selection-start-column="24" selection-end-line="191" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/single.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="32" selection-end-column="17" />
-          <folding>
-            <marker date="1536846425997" expanded="true" signature="1640:1694" ph="..." />
-            <marker date="1536846425997" expanded="true" signature="2090:2126" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/framework/meta-box/inc/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1299,18 +1064,6 @@
             <marker date="1418590564000" expanded="true" signature="8215:8233" ph="..." />
             <marker date="1418590564000" expanded="true" signature="8372:8543" ph="..." />
             <marker date="1418590564000" expanded="true" signature="8567:8594" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/lib/shortcodes/shortcodes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="554" column="13" selection-start-line="554" selection-start-column="13" selection-end-line="554" selection-end-column="13" />
-          <folding>
-            <element signature="n#team_shortcode#0;n#!!top" expanded="false" />
-            <element signature="n#service_shortcode#0;n#!!top" expanded="false" />
-            <marker date="1536847472749" expanded="true" signature="21595:21695" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1367,6 +1120,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/framework/meta-boxes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="e#655#1755#0#PHP" expanded="false" />
+            <element signature="e#1802#2237#0#PHP" expanded="false" />
+            <element signature="e#2281#3183#0#PHP" expanded="false" />
+            <element signature="e#3228#3935#0#PHP" expanded="false" />
+            <element signature="e#3981#4436#0#PHP" expanded="false" />
+            <element signature="e#4481#5581#0#PHP" expanded="false" />
+            <element signature="e#5620#9450#0#PHP" expanded="false" />
+            <element signature="e#9489#12279#0#PHP" expanded="false" />
+            <element signature="e#12312#13812#0#PHP" expanded="false" />
+            <element signature="e#13845#15062#0#PHP" expanded="false" />
+            <element signature="e#15095#16615#0#PHP" expanded="false" />
+            <element signature="e#16650#19826#0#PHP" expanded="false" />
+            <element signature="e#19871#22873#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/smartblog/content-single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="181" column="62" selection-start-line="181" selection-start-column="40" selection-end-line="181" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/lib/shortcodes/shortcodes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="179" column="33" selection-start-line="179" selection-start-column="33" selection-end-line="179" selection-end-column="33" />
+          <folding>
+            <element signature="n#team_shortcode#0;n#!!top" expanded="false" />
+            <element signature="n#service_shortcode#0;n#!!top" expanded="false" />
+            <marker date="1536849752224" expanded="true" signature="21619:21719" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="55" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="203" selection-end-column="1" />
+          <folding>
+            <element signature="e#744#2104#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/template-parts/content/single.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <marker date="1536849752413" expanded="true" signature="1664:1718" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/charm/js/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="62" column="42" selection-start-line="0" selection-start-column="0" selection-end-line="101" selection-end-column="3" />
           <folding />
         </state>
       </provider>
