@@ -536,11 +536,11 @@ function blog_shortcode( $atts ) {
     $num = $atts['number'];
 
     $query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $num ) );
-
+    $totalPage = $query->max_num_pages;
     $html = '';
     $html .= '<div class="left_new_page">';
     $html .= '<div class="row">';
-
+    global $paged;
 
     if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
         $html .= '<div class="col-md-12">';
@@ -553,6 +553,9 @@ function blog_shortcode( $atts ) {
         $html .= '<a class="h3_title_blog font_gothic_bold" href="' . get_the_permalink() . '">' . get_the_title() . '</a>';
         $html .= '</h3>';
         $html .= '<div class="date_new font_open">';
+        $html .= '<span> <i class="fa fa-eye" aria-hidden="true"></i> 
+            ' . getPostViews(get_the_ID()) . '</span><span>  | ';
+
         $html .= '<span><i class="fa fa-calendar"></i> ' . get_the_date('d/m/Y') . '</span> |';
         $html .= '<span> <i class="fa fa-user"></i> ' . get_the_author() . '</span>';
         $html .= '</div>';
@@ -563,6 +566,21 @@ function blog_shortcode( $atts ) {
         $html .= '</div>';
         $html .= '</div>';
     endwhile; endif;
+    if ($totalPage > 1) {
+        $html .= '<div class="pagination-row">';
+        $html .= ' <nav>';
+        $html .= '<ul class="pagination">';
+        $html .= '<li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>';
+        for ($i = 1; $i <= $totalPage; $i++) {
+            $html .= '<li><a href="' . get_pagenum_link($i). '">' . $i .'</a></li>';
+        }
+        $html .= '<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>';
+        $html .= '</ul></nav></div>';
+        for ($i = 1; $i <= $totalPage; $i++) {
+
+        }
+    }
+
 
     $html .= '</div>';
     $html .= '</div>';

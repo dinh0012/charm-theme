@@ -1283,3 +1283,38 @@ footer{
 footer{
     background-color: #2f2f2f;
 }
+.pagination-row{
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+.pagination-row .pagination li{
+    display: inline-block;
+
+}
+.pagination-row .pagination li span,
+.pagination-row .pagination li a{
+    border: none;
+    background-color: #eee;
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #333;
+    line-height: 40px;
+    padding: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.pagination-row .pagination li.active span,
+.pagination-row .pagination li.active a,
+.pagination-row .pagination li:hover span,
+.pagination-row .pagination li:hover a{
+    background-color: #e3ae57;
+    color: #fff;
+}
+.pagination-row .pagination li a i{
+    line-height: 40px;
+}
