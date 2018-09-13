@@ -12,7 +12,29 @@
         <span> <i class="fa fa-eye" aria-hidden="true"></i> <?php echo getPostViews(get_the_ID()) ?></span>
     </div>
     <div class="content_new_detail font_open">
+        <?php $format = get_post_format();
+            if ($format == 'video') {
+                $post_embed_video = rwmb_meta('charm_post_video_embed_url', 'type=oembed', get_the_ID() );
+                $post_self_hosted_video = rwmb_meta( 'charm_post_self_hosted_video', 'type=file_input', get_the_ID() );
+                if ( has_post_thumbnail() ) {
+                    $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "full" );
+                }
+
+                if( rwmb_meta( 'charm_video_type', '', get_the_ID() ) == 'embed' ) {
+                    if( $post_embed_video != '' ) { ?>
+                        <div class="post-video-wrapper responsive-video-wrapper clearfix"><?php echo wp_oembed_get( $post_embed_video ); ?></div>
+                    <?php }
+                } elseif( rwmb_meta( 'charm_video_type', '', get_the_ID() ) == 'selfhosted' ) {
+                    if( $post_self_hosted_video != '' ) { ?>
+                        <div class="post-video-wrapper clearfix">
+                            <?php echo do_shortcode( '[video src="'. esc_url( $post_self_hosted_video ) .'" poster="'. esc_url( $img_src[0] ) .'"][/video]' ); ?>
+                        </div>
+                    <?php }
+                }
+            } else {
+        ?>
         <img class="img-responsive" src="<?php the_post_thumbnail_url() ?>"> <br>
+        <?php } ?>
         <?php the_content() ?>
     </div>
 </div>
@@ -20,3 +42,4 @@
     <?php social_share(); ?>
 </div>
 <?php get_template_part( 'template-parts/content/related-posts' );?>
+<?php get_template_part( 'template-parts/content/post-navigation' );?>

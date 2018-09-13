@@ -21,9 +21,9 @@
 				Connect with us
 			</div>
 			<ul>
-				<li><a href="<?php echo $socialLink['facebook'] ?>"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['youtube'] ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-				<li><a href="<?php echo $socialLink['instagram'] ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['facebook'] ?>"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['youtube'] ?>"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+				<li><a target="_blank" href="<?php echo $socialLink['instagram'] ?>"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 		<div class="bot_foot">

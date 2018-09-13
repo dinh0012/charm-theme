@@ -534,20 +534,42 @@ add_shortcode( 'how_we_work', 'how_we_work_shortcode' );
 
 function blog_shortcode( $atts ) {
     $num = $atts['number'];
+    global $paged;
 
-    $query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $num ) );
+    $query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => $num,  'paged' => $paged) );
     $totalPage = $query->max_num_pages;
     $html = '';
     $html .= '<div class="left_new_page">';
     $html .= '<div class="row">';
-    global $paged;
+    if(empty($paged)) $paged = 1;
 
     if( $query->have_posts() ) : while( $query->have_posts() ) : $query->the_post();
         $html .= '<div class="col-md-12">';
         $html .= '<div class="item_n">';
-        $html .= '<a href="' . get_the_permalink() . '" class="img_n">';
-        $html .= '<img src="' . get_the_post_thumbnail_url() . '" alt="" class="img-responsive">';
-        $html .= '</a>';
+        $format = get_post_format();
+        if ($format == 'video') {
+            $post_embed_video = rwmb_meta('charm_post_video_embed_url', 'type=oembed', get_the_ID() );
+            $post_self_hosted_video = rwmb_meta( 'charm_post_self_hosted_video', 'type=file_input', get_the_ID() );
+            if ( has_post_thumbnail() ) {
+                $img_src = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), "full" );
+            }
+            if (rwmb_meta('charm_video_type', '', get_the_ID()) == 'embed') {
+                if ($post_embed_video != '') {
+                    $html .= '<div class="post-video-wrapper responsive-video-wrapper clearfix">'. wp_oembed_get( $post_embed_video ) .'</div>';
+                }
+            } elseif (rwmb_meta('charm_video_type', '', get_the_ID()) == 'selfhosted') {
+                if ($post_self_hosted_video != '') {
+                    $html .= '<div class="post-video-wrapper clearfix">';
+                    $html .= do_shortcode('[video src="' . esc_url($post_self_hosted_video) . '" poster="' . esc_url($img_src[0]) . '"][/video]');
+                    $html .= '</div>';
+                }
+            }
+        } else {
+            $html .= '<a href="' . get_the_permalink() . '" class="img_n">';
+            $html .= '<img src="' . get_the_post_thumbnail_url() . '" alt="" class="img-responsive">';
+            $html .= '</a>';
+        }
+
         $html .= '<div class="content_n">';
         $html .= '<h3 class="font_open">';
         $html .= '<a class="h3_title_blog font_gothic_bold" href="' . get_the_permalink() . '">' . get_the_title() . '</a>';
@@ -570,15 +592,18 @@ function blog_shortcode( $atts ) {
         $html .= '<div class="pagination-row">';
         $html .= ' <nav>';
         $html .= '<ul class="pagination">';
-        $html .= '<li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>';
-        for ($i = 1; $i <= $totalPage; $i++) {
-            $html .= '<li><a href="' . get_pagenum_link($i). '">' . $i .'</a></li>';
+        if ($paged > 1) {
+            $html .= '<li><a href="' . get_pagenum_link($paged - 1). '"><i class="fa fa-angle-double-left"></i></a></li>';
         }
-        $html .= '<li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>';
-        $html .= '</ul></nav></div>';
         for ($i = 1; $i <= $totalPage; $i++) {
+            $classActive = $i == $paged ? 'active' : '';
+            $html .= '<li class="' . $classActive . '"><a href="' . get_pagenum_link($i). '">' . $i .'</a></li>';
+        }
+        if ($paged < $totalPage) {
+            $html .= '<li><a href="' . get_pagenum_link($paged + 1).' "><i class="fa fa-angle-double-right"></i></a></li>';
+        }
 
-        }
+        $html .= '</ul></nav></div>';
     }
 
 

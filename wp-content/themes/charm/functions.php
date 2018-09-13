@@ -7,13 +7,61 @@ require_once 'lib/widget/widget-tabs.php';
 require_once 'lib/shortcodes/shortcodes.php';
 require_once 'lib/post-type/init_post_type.php';
 require_once 'lib/post-share.php';
+require_once 'lib/meta-box/meta-box.php';
 
-add_theme_support( 'post-thumbnails' );
+
+function theme_setup() {
+    add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'post-formats', array( 'audio', 'gallery', 'image', 'link', 'quote', 'status', 'video' ) );
+}
+add_action( 'after_setup_theme', 'theme_setup' );
+
+function theme_register_meta_boxes( $meta_boxes ){
+    $prefix = 'charm_';
+    $meta_boxes[] = array(
+        'id'         => 'themecharm_format_video',
+        'title'      => __( 'Video Post Options', 'themecharm' ),
+        'post_types' => array( 'post' ),
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'autosave'   => true,
+        'fields'     => array(
+
+            array(
+                'name'				=> __( 'Video Type', 'themecharm' ),
+                'id'				=> "{$prefix}video_type",
+                'type'				=> 'select',
+                'options'			=> array(
+                    'embed'			=> __( 'Embed', 'themecharm' ),
+                    'selfhosted'	=> __( 'Self Hosted', 'themecharm' ),
+                ),
+                'multiple'			=> false,
+                'std'				=> '',
+                'placeholder'		=> __( 'Select Video Type', 'themecharm' ),
+            ),
+
+            array(
+                'name'				=> __( 'Video Embed URL', 'themecharm' ) .' <a href="http://codex.wordpress.org/Embeds" target="_blank">'. __( '(Learn More)', 'themecharm' ) .'</a>',
+                'id'				=> "{$prefix}post_video_embed_url",
+                'type'				=> 'oembed',
+            ),
+
+            array(
+                'name'				=> __( 'Self Hosted Video', 'themecharm' ),
+                'id'				=> "{$prefix}post_self_hosted_video",
+                'type'				=> 'file_input',
+            ),
+        )
+    );
+    return $meta_boxes;
+}
+add_filter( 'rwmb_meta_boxes', 'theme_register_meta_boxes' );
+
 /*-----------------------------------------------------------------------------------*/
 /* Enqueue scripts and styles
 /*-----------------------------------------------------------------------------------*/
-if ( ! function_exists( 'themepixels_scripts' ) ) {
-    function themepixels_scripts() {
+if ( ! function_exists( 'themecharm_scripts' ) ) {
+    function themecharm_scripts() {
 
         /*-----------------------------------------------------------------------------------*/
         /* Styles
@@ -45,7 +93,7 @@ if ( ! function_exists( 'themepixels_scripts' ) ) {
         }
     }
 }
-add_action( 'wp_enqueue_scripts', 'themepixels_scripts' );
+add_action( 'wp_enqueue_scripts', 'themecharm_scripts' );
 
 function admin_style() {
     wp_enqueue_media();
@@ -69,7 +117,7 @@ function theme_widgets_init()
 {
 
     register_sidebar(array(
-        'name' => __('Primary Sidebar', 'themepixels'),
+        'name' => __('Primary Sidebar', 'themecharm'),
         'id' => 'primary-sidebar',
         'before_widget' => '<div id="%1$s" class="sidebar-widget %2$s clearfix">',
         'after_widget' => '</div>',
@@ -82,8 +130,8 @@ add_action( 'widgets_init', 'theme_widgets_init' );
 /*-----------------------------------------------------------------------------------*/
 /* Favicon
 /*-----------------------------------------------------------------------------------*/
-if ( ! function_exists( 'themepixels_favicon' ) ) {
-    function themepixels_favicon() {
+if ( ! function_exists( 'themecharm_favicon' ) ) {
+    function themecharm_favicon() {
         $favicon = tps_get_option( 'favicon', 'url' );
         $iphone_icon = tps_get_option( 'iphone_icon', 'url' );
         $ipad_icon = tps_get_option( 'ipad_icon', 'url' );
@@ -116,17 +164,17 @@ if ( ! function_exists( 'themepixels_favicon' ) ) {
         ) );
     }
 }
-add_filter( 'wp_head', 'themepixels_favicon' );
+add_filter( 'wp_head', 'themecharm_favicon' );
 
 if ( ! function_exists('tps_get_option') ) {
     function tps_get_option($id, $param = false ) {
-        global $themepixels_options;
+        global $themecharm_options;
         $output = '';
-        if ( isset($themepixels_options[$id]) && $themepixels_options[$id] !== '' ) {
-            $output = $themepixels_options[$id];
+        if ( isset($themecharm_options[$id]) && $themecharm_options[$id] !== '' ) {
+            $output = $themecharm_options[$id];
         }
-        if ( !empty($themepixels_options[$id]) && $param ) {
-            $output = $themepixels_options[$id][$param];
+        if ( !empty($themecharm_options[$id]) && $param ) {
+            $output = $themecharm_options[$id][$param];
         }
         return $output;
     }
