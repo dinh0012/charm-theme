@@ -1374,4 +1374,6 @@ footer{
     padding-top: 25px;
     padding-bottom: 56.25%;
 }
-
+.row {
+    width: initial;
+}
